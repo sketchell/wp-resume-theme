@@ -1,0 +1,106 @@
+/*
+Theme Name: Resume
+Description: Resume style site built on bootstrap
+Version:1.1
+Author: Sarah Ketchell
+*/
+
+
+//----BODY-----
+//----------------------
+
+body {
+    margin: 0;
+}
+
+//----HEADER-----
+//----------------------
+
+#header {
+    margin: 0;
+    background-color: #dad3ef;
+}
+
+.name {
+        font-family: 'Quicksand';
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        border-width: 3px!important;
+        border-color: white!important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    
+  @media only screen and (min-width: 768px)  {
+        font-size: 40px;
+    }
+}
+
+.title {
+    width: 76%;
+    padding-left: 25%;
+}
+
+.heading {
+    padding-top: 40px;
+    padding-bottom: 38px;
+    
+    a, a:hover {
+        text-decoration: none;
+    }
+}
+
+#menu-main {
+    li {
+        list-style: none;
+
+        a, a:hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.menu-show {
+    position: relative;
+    text-align: center;
+    color: white!important;
+    font-family: 'Quicksand';
+    font-size: 30px!important;
+    padding: 0;
+    right: 0!important;
+    
+    ul li a {
+        font-size: 20px;
+    }
+    
+     @media only screen and (min-width: 768px)  {
+        font-size: 45px!important;
+    }
+    
+}
+
+#menu-main {
+    right: 9999%;
+    font-size: 0px;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+}
+
+.menu-main-container {
+    position: relative;
+}
+
+.menu-row {
+    background-color: #dad3ef;
+}
+
+//----HOME-----
+//----------------------
+
+
+
+
