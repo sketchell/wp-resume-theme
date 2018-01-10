@@ -34,10 +34,25 @@ register_nav_menus( array(
     'secondary' => __( 'Secondary Menu', 'BaseTheme' )
 ) );
 
-/**Add options page***/
+/***Add options page***/
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page();
 	
 }
+
+/***Change login image***/
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/Static/images/login.png);
+		height:65px;
+		width:320px;
+		background-size: 226px 87px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 ?>
